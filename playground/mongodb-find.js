@@ -14,7 +14,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',(err,db)=>{
   // },(err)=>{
   //   console.log('unable to find object');
   // });
-  db.collection('User').find({name:'tarun'}).toArray().then((doc)=>{
+  db.collection('User').find({name:'tarun'}).toArray( ).then((doc)=>{
     console.log(`Users`);
     console.log(JSON.stringify(doc,undefined,2));
   },(err)=>{
